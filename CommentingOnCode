@@ -1,0 +1,51 @@
+public with sharing class CommentingOnCodeExercise {
+
+    /**
+     * Your Assignment is to add comments describing what is being done in the methods below.
+     * Call out the concepts you learned in your readings and in class.
+     */
+
+    public static void cartValues() {
+
+        Integer minimumCartValue = 50;
+
+        Integer itemA = 10;
+        Integer itemB = 20;
+        Integer itemC = 45;
+        
+        /*Four integers are being declared within the method cartValue(). 
+        Those values are 50, 10, 20, and 45.*/
+
+        Integer cartValue = itemA + itemB;
+        
+        //The total value of the integer declared for cartValue = 30
+        //The calculation is 10 + 20
+
+        Boolean cartMinimumMet = cartValue >= minimumCartValue;
+        
+        /*cartMininumMet is creating a true / false statement to declare that 30 is greater than or equal to 50
+        and the statement for cartMinimumMet is a FALSE statement*/
+
+        System.debug('Have we reached the minimum: ' + cartMinimumMet);
+        
+        /*Line 29 will print out the following statement for the booleen
+        Have we reached the minimum: FALSE*/
+
+        cartValue = cartValue + itemC;
+        
+        //Line 34 is declaring that the integer of cartValue is now calculating 10 + 20 + 45 and is equal to 75
+
+        cartMinimumMet = cartValue >= minimumCartValue;
+        
+        /*cartMininumMet is creating a true / false statement to declare that 75 is greater than or equal to 50
+        and the statement for cartMinimumMet is a TRUE statement*/
+
+        System.debug('How about now? : ' + cartMinimumMet);
+        
+        /*Line 43 will print out the following statement for the booleen in line 38
+        How about now? : TRUE*/
+
+    }
+
+
+}
